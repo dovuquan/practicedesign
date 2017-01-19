@@ -5,7 +5,7 @@ body{
 	border: 1px solid gray;
 
 }
-.body{
+.main{
 	background-color: #EEDFCC;
 }
 header{
@@ -19,10 +19,8 @@ header{
 .login a{
 	color: white;
 }
-.dropdown-menu{
 
-}
-.example ul li a{
+.nav-menu ul li a{
 	margin-right: 60px;
 }
 .post{
@@ -88,13 +86,19 @@ background-color: #8B3A3A;
  	
  	
  }
- @media screen and (min-width: 1204px)
+ @media all and (max-width: 320px)
  {
  	.container{
  		max-width: 1280px;
  		margin: 0 auto;
  	}
- 	
+ 	body{
+		max-width: 100%;
+		margin: 0 auto;
+ 	}
+ 	.article1 textarea{
+ 		float: none;
+ 	}
 
 
  }
@@ -103,7 +107,8 @@ background-color: #8B3A3A;
  .content{
  	height: auto;
  	width: 100%;
-	border-bottom: 1px solid black;
+	
+	
 	
 
  }
@@ -142,8 +147,10 @@ background-color: #8B3A3A;
 }
 
 .article{
-	
+	margin-right: 20px;
 	margin-left: 20px;
+	border-bottom:  1px solid black;
+	border-top: 1px solid black;
 
 }
 
@@ -185,6 +192,8 @@ width: 100px;
 .article1{
 	
 	margin-left: 20px;
+	margin-right: 20px;
+	border-bottom:  1px solid black;
 }
 
 .article1btn{
@@ -221,6 +230,8 @@ background-color: #CC3300;
  }
 .article2{
 	margin-left: 20px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 
@@ -315,7 +326,6 @@ background-color: #CC3300;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    
     margin-right: 1px;
     cursor: pointer;
     margin-left: 0px;
@@ -341,6 +351,9 @@ background-color: #CC3300;
     text-align: center;
     padding: auto;
     text-decoration: none;
+}
+.article2 input{
+	margin-bottom: 5px;
 }
 .articlebtn{
 	background-color: gray;
@@ -381,7 +394,7 @@ background-color: #CC3300;
     text-decoration: none;
 }
 .article1 button{
-	margin-bottom: 50px;
+	margin-bottom: 0px;
 }
 .article1 h3{
 	float: right;
@@ -417,7 +430,4 @@ background-color: #CC3300;
 .nav-menu{
 	margin-left: 30px;
 
-}
-.nav-menu li{
-	margin-left: 40px;
 }
